@@ -11,7 +11,9 @@ namespace PWProjeto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var dados = new DAO.ClienteDAO().GetClientes();
+            GridView1.DataSource = dados;
+            GridView1.DataBind();
         }
     }
 }
