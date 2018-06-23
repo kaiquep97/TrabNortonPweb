@@ -11,9 +11,27 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["cod_usuario"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
+
+            Label1.Text = "OLÁ " + (string)Session["nome"];
+
             var dados = new DAO.ClienteDAO().GetClientes();
             GridView1.DataSource = dados;
             GridView1.DataBind();
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnSair_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
         }
     }
 }

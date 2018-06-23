@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplication1.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeBehind="Login.aspx.cs" Inherits="WebApplication1.WebForm1" %>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -21,18 +21,18 @@
 						<div>
 							<label for="txtEmail">E-mail:</label>
                             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-							<%--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>--%>
 						</div>
+                        <br />
 						<div>
 							<label for="txtSenha">Senha:</label>
                             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
-							<%--<input id="InputPassword" type="password" placeholder="&#128273;Digite sua senha." required>--%>
 						</div>
 						<div>
                             <asp:Button ID="BtnEntrar" runat="server" CssClass="btn1" OnClick="BtnEntrar_Clicked" Text="Entrar" />
                             <br />
                             <asp:Label ID="Label1" runat="server"></asp:Label>
-							<%--<input type="submit" class="btn1" value="Entrar"/>--%>
+                            <br />
+                            <asp:HyperLink ID="EsqueciSenha" runat="server">Esqueci a Senha</asp:HyperLink>
 						</div>
 					</form>
 				</div>

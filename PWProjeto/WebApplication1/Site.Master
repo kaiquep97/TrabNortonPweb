@@ -52,9 +52,8 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Página inicial</a></li>
-                        <li><a runat="server" href="~/About">Sobre</a></li>
-                        <li><a runat="server" href="~/Contact">Contato</a></li>
+                        <li><a runat="server" href="~/lista">Lista</a></li>
+                        <li><a runat="server" href="~/crud">Cadastrar Novo</a></li>
                     </ul>
                 </div>
             </div>
