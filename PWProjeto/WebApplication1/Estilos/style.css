@@ -28,7 +28,7 @@ body {
 	margin-bottom: 10px;
 	color: rgba(0,0,0,0.5);
 }
-#InputEmail, #InputPassword { 
+#txtEmail, #txtSenha { 
 	display: block;
 	padding: 10px;
 	width: 100%;
