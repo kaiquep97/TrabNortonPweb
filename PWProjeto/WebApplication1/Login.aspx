@@ -22,24 +22,23 @@
 							<label for="txtEmail">E-mail:</label>
 
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="input" OnTextChanged="txtEmail_TextChanged" Width="266px"></asp:TextBox>
-							<asp:RequiredFieldValidator ID="email" runat="server" ErrorMessage="Digite um E-mail" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
 							<br />
-							<!--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>-->
-							<asp:RegularExpressionValidator ID="IdEmail" runat="server" ErrorMessage="Digite um E-mail no formato xx@xx.com" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
 						</div>
                         <br />
 						<div>
 							<label for="txtSenha">Senha:</label>&nbsp;
                             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" CssClass="input" Width="272px"></asp:TextBox>
-							<!--<input id="InputPassword" type="password" placeholder="&#128273;Digite sua senha." required>-->
 						</div>
-						<asp:RequiredFieldValidator ID="Senha" runat="server" ErrorMessage="Digite uma Senha!" ForeColor="Red" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
 						<br />
 						<br />
 						<div>
                             <asp:Button ID="BtnEntrar" runat="server" CssClass="btn1" OnClick="BtnEntrar_Clicked" Text="Entrar" />
                             <br />
-&nbsp;<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <asp:Button ID="BtnEsqueci" runat="server" OnClick="BtnEsqueci_Click" Text="Esqueci minha senha" />
+                            <br />
+                            <br />
+                            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 						</div>
 					</form>
 				</div>

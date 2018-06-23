@@ -40,5 +40,37 @@ namespace WebApplication1
         {
 
         }
+
+        protected void BtnEsqueci_Click(object sender, EventArgs e)
+        {
+
+            if (txtEmail.Text is string em)
+            {
+                try
+                {
+                    using (var dao = new DAO.UsuarioDAO())
+                    {
+                        var user = dao.GetUsuario(em);
+
+                        if (user == null)
+                        {
+                            Label1.Text = "Email Não encontrado";
+                            return;
+                        }
+
+                        var email = new Util.Email();
+                        if (email.EnviaEmail("SENHA", $"Sua Senha é {user.senha}", em))
+                            Label1.Text = "EMAIL ENVIADO COM SUCESSO!";
+
+                    }
+                }
+                catch (Exception err)
+                {
+                    Label1.Text = $"ERRO: {err.Message}";
+                }
+
+
+            }
+        }
     }
 }

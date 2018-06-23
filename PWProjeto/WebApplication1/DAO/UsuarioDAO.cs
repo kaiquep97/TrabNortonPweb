@@ -26,5 +26,12 @@ namespace WebApplication1.DAO
                 .Where(x => x.email.Equals(email) && x.senha.Equals(senha))
                 .FirstOrDefault();
         }
+
+        public Usuario GetUsuario(string email)
+        {
+            return connection.Usuarios
+                .Where(x => x.email.Equals(email))
+                .FirstOrDefault();
+        }
     }
 }
