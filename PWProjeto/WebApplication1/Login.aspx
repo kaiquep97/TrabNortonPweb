@@ -22,25 +22,13 @@
 							<label for="txtEmail">E-mail:</label>
 
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="input" OnTextChanged="txtEmail_TextChanged" Width="266px"></asp:TextBox>
-<<<<<<< HEAD
-							<asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ErrorMessage="Digite um E-mail" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
-							<br />
-							<!--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>-->
-							<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenhaEmail" runat="server" ErrorMessage="Digite um E-mail no formato xx@xx.com" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-=======
-							<br />
->>>>>>> a6c4c3a07b62caa2e813b0c57a8757d6c71ad4d9
+
 						</div>
                         <br />
 						<div>
 							<label for="txtSenha">Senha:</label>&nbsp;
                             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" CssClass="input" Width="272px"></asp:TextBox>
 						</div>
-<<<<<<< HEAD
-						<asp:RequiredFieldValidator ID="RequiredFieldValidatorSenha" runat="server" ErrorMessage="Digite uma Senha!" ForeColor="Red" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
-						<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenha" runat="server" ControlToValidate="txtCep" ErrorMessage="Digite 8 numeros!" ForeColor="Red" ValidationExpression="^\d{8}?"></asp:RegularExpressionValidator>
-=======
->>>>>>> a6c4c3a07b62caa2e813b0c57a8757d6c71ad4d9
 						<br />
 						<br />
 						<div>

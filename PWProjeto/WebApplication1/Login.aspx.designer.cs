@@ -31,27 +31,6 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-<<<<<<< HEAD
-        /// Controle RequiredFieldValidatorEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorEmail;
-        
-        /// <summary>
-        /// Controle RegularExpressionValidatorSenhaEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorSenhaEmail;
-        
-        /// <summary>
-=======
->>>>>>> a6c4c3a07b62caa2e813b0c57a8757d6c71ad4d9
         /// Controle txtSenha.
         /// </summary>
         /// <remarks>
@@ -61,30 +40,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
         
         /// <summary>
-<<<<<<< HEAD
-        /// Controle RequiredFieldValidatorSenha.
-=======
         /// Controle BtnEntrar.
->>>>>>> a6c4c3a07b62caa2e813b0c57a8757d6c71ad4d9
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-<<<<<<< HEAD
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorSenha;
-        
-        /// <summary>
-        /// Controle RegularExpressionValidatorSenha.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorSenha;
-=======
         protected global::System.Web.UI.WebControls.Button BtnEntrar;
->>>>>>> a6c4c3a07b62caa2e813b0c57a8757d6c71ad4d9
         
         /// <summary>
         /// Controle BtnEsqueci.

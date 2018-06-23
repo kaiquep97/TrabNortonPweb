@@ -6,7 +6,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.DAO
 {
-    public class ClienteDAO
+    public class ClienteDAO:IDisposable
     {
         private Contexto connection;
 
@@ -39,6 +39,14 @@ namespace WebApplication1.DAO
             connection.Clientes.Remove(cliente);
             connection.SaveChanges();
         }
+
+        public void Delete(int id)
+        {
+            var cli = GetCliente(id);
+            connection.Clientes.Remove(cli);
+            connection.SaveChanges();
+        }
+
         public Cliente GetCliente(int id)
         {
             return connection.Clientes
@@ -48,6 +56,11 @@ namespace WebApplication1.DAO
         public List<Cliente> GetClientes()
         {
             return connection.Clientes.ToList();
+        }
+
+        public void Dispose()
+        {
+            connection.Dispose();
         }
     }
 }
