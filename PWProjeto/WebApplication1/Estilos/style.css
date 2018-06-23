@@ -74,13 +74,10 @@ label{
 	}
 }
 
-input[type=text], input[type=email],input[type=password] {
-    padding: 12px;
-    border: xpx solid 
-
-
-
-
+.input[type=text], .input[type=email], .input[type=password] {
+    padding: 2px;
+    border: xpx solid
+	font-size: 5px;
 
 ;
     border-radius: 4px;
