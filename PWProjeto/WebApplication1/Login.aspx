@@ -22,10 +22,10 @@
 							<label for="txtEmail">E-mail:</label>
 
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="input" OnTextChanged="txtEmail_TextChanged" Width="266px"></asp:TextBox>
-							<asp:RequiredFieldValidator ID="email" runat="server" ErrorMessage="Digite um E-mail" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+							<asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ErrorMessage="Digite um E-mail" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
 							<br />
 							<!--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>-->
-							<asp:RegularExpressionValidator ID="IdEmail" runat="server" ErrorMessage="Digite um E-mail no formato xx@xx.com" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+							<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenhaEmail" runat="server" ErrorMessage="Digite um E-mail no formato xx@xx.com" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
 						</div>
                         <br />
 						<div>
@@ -33,7 +33,8 @@
                             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" CssClass="input" Width="272px"></asp:TextBox>
 							<!--<input id="InputPassword" type="password" placeholder="&#128273;Digite sua senha." required>-->
 						</div>
-						<asp:RequiredFieldValidator ID="Senha" runat="server" ErrorMessage="Digite uma Senha!" ForeColor="Red" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
+						<asp:RequiredFieldValidator ID="RequiredFieldValidatorSenha" runat="server" ErrorMessage="Digite uma Senha!" ForeColor="Red" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
+						<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenha" runat="server" ControlToValidate="txtCep" ErrorMessage="Digite 8 numeros!" ForeColor="Red" ValidationExpression="^\d{8}?"></asp:RegularExpressionValidator>
 						<br />
 						<br />
 						<div>
