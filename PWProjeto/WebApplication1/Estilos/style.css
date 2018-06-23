@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: arial;
+	box-sizing: border-box;
+}
+body {
+	background: #DEDEDE;
+	min-height: 100vh;
+}
+#b1{
+	display: flex;
+}
+#menu {
+	float: bottom;
+}
+
+.page {
+	margin: auto;
+	width: 50%;
+	max-width: 500px;
+	background: #F3F3F3;
+	padding: 30px;
+	border: 1px solid rgba(0,0,0,0);
+}
+.titulo {
+	text-align: center;
+	margin-bottom: 10px;
+	color: rgba(0,0,0,0.5);
+}
+#InputEmail, #InputPassword { 
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin: 20px 0;
+	font-size: 15px;
+}
+p{
+	font-size: 20px;
+	color: rgba(0,0,0,0.5);
+}
+.pessoal ,.endereco{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin: 5px 0;
+	font-size: 15px;
+}
+label{
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.btn1 {
+	color: #ffffff;
+	border: 1;
+	text-shadow: 0px 1px 0px #333333;
+	background:blue;
+	width: auto;
+	padding: 5px 45px 5px 45px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+@media (max-width:768px){
+	.page {
+		width: 75%;
+	}
+}
+
+@media (max-width:480px){
+	.page {
+		width: 95%;
+	}
+}
+
+input[type=text], input[type=email],input[type=password] {
+    padding: 12px;
+    border: xpx solid 
+
+
+
+
+
+;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+

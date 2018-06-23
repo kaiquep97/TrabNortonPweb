@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="PWProjeto.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplication1.WebForm1" %>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<title>login - Loja Star Nerd</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="Stylesheet" type="text/css" href="Estilos/style.css" />
 		<meta name="keywords" content="programação, web, fatec, ads, css, login, p1" />
 		<meta name="author" content="Kaique Pereira, Wagner Souza da Silva, ADS Noturno, Fatec Ipiranga" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

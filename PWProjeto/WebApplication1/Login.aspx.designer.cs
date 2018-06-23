@@ -7,7 +7,7 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PWProjeto {
+namespace WebApplication1 {
     
     
     public partial class WebForm1 {
