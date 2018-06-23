@@ -27,10 +27,11 @@
 					<br/>
 				<p>Informações pessoais:</p>
 				<div class="pessoal">
-                    <label for="InputCodigo">Codigo</label>
-                    <asp:TextBox ID="InputCodigo" runat="server"></asp:TextBox>
+                    <label for="InputCodigo">Codigo:</label>
+                    <asp:TextBox ID="InputCodigo" runat="server" CssClass="input"></asp:TextBox>
 
                     <asp:Button ID="BtnPesquisar" Text="Pesquisar" runat="server" OnClick="BtnPesquisar_Click" CausesValidation="False" UseSubmitBehavior="False" ValidateRequestMode="Disabled"/>
+                    <br />
                     <br />
 					<label for="InputNome">Nome:</label>
 					<!--<input type="text" id="InputNome" placeholder="Digite o nome completo." size="40"><br/><br/>-->
@@ -108,9 +109,9 @@
                     <br /><br />
                     <asp:Button ID="BtnExcluir" class="btn1" runat="server" Text="Excluir" OnClick="BtnExcluir_Click"/> 
                     <br /><br />
-                    <asp:Button ID="BtnSair" class="btn1" runat="server" Text="Sair" OnClick="BtnSair_Click"/>
+                    <asp:Button ID="BtnSair"  CausesValidation="False" UseSubmitBehavior="False" ValidateRequestMode="Disabled" class="btn1" runat="server" Text="Sair" OnClick="BtnSair_Click"/>
                     <br /><br />
-                    <asp:Button ID="BtnVoltar" class="btn1" runat="server" Text="Voltar" OnClick="BtnVoltar_Click"/>
+                    <asp:Button ID="BtnVoltar"  CausesValidation="False" UseSubmitBehavior="False" ValidateRequestMode="Disabled" class="btn1" runat="server" Text="Voltar" OnClick="BtnVoltar_Click"/>
 				</div>						
 				</form>
 			</div>
