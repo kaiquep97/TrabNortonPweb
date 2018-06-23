@@ -13,6 +13,7 @@ namespace WebApplication1.Models
     public class Contexto:DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         public Contexto()
             :base("conexaoString")
@@ -28,6 +29,8 @@ namespace WebApplication1.Models
             modelBuilder.Entity<Cliente>().ToTable("cliente");
             modelBuilder.Entity<Cliente>().HasKey(x => x.cod_cliente);
 
+            modelBuilder.Entity<Usuario>().ToTable("usuario");
+            modelBuilder.Entity<Usuario>().HasKey(x => x.cod_usuario);
         }
     }
 }

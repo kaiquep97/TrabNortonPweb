@@ -17,17 +17,22 @@
 			<div class="page">
 				<div class="titulo"><h1>Login</h1></div>
 				<div>
-					<form id="frmLogin" method="post" action="lista.aspx">
+					<form id="frmLogin" runat="server">
 						<div>
-							<label for="InputEmail">E-mail:</label>
-							<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>
+							<label for="txtEmail">E-mail:</label>
+                            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+							<%--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>--%>
 						</div>
 						<div>
-							<label for="InputPassword">Senha:</label>
-							<input id="InputPassword" type="password" placeholder="&#128273;Digite sua senha." required>
+							<label for="txtSenha">Senha:</label>
+                            <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+							<%--<input id="InputPassword" type="password" placeholder="&#128273;Digite sua senha." required>--%>
 						</div>
 						<div>
-							<input type="submit" class="btn1" value="Entrar"/>
+                            <asp:Button ID="BtnEntrar" runat="server" CssClass="btn1" OnClick="BtnEntrar_Clicked" Text="Entrar" />
+                            <br />
+                            <asp:Label ID="Label1" runat="server"></asp:Label>
+							<%--<input type="submit" class="btn1" value="Entrar"/>--%>
 						</div>
 					</form>
 				</div>
