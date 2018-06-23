@@ -13,13 +13,14 @@ namespace PWProjeto.Models
         public virtual DbSet<Usuario> Usuarios { get; set; }
         public virtual DbSet<Cliente> Clientes { get; set; }
         public Contexto()
-            :base("conexaoString")
+            :base("TESTECS")
         {
-
         }
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Usuario>().MapToStoredProcedures();
 
         }
     }
