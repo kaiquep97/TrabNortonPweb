@@ -1,3 +1,13 @@
+.btn2 {
+	color: #ffffff;
+	border: 1;
+	text-shadow: 0px 1px 0px #333333;
+	background: #3971e5;
+	width: 40%;
+	padding: 5px ;
+	font-size: 12px;
+	cursor: pointer;
+}
 *{
 	margin:0;
 	padding:0;
