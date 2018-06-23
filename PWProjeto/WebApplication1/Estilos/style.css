@@ -1,8 +1,8 @@
 .btn2 {
 	color: #ffffff;
-	border: 1;
+	border: 1px;
 	text-shadow: 0px 1px 0px #333333;
-	background: #3971e5;
+	background: #537fe8;
 	width: 40%;
 	padding: 5px ;
 	font-size: 12px;
@@ -22,7 +22,7 @@ body {
 	display: flex;
 }
 #menu {
-	float: bottom;
+	float: inherit;
 }
 
 .page {
@@ -63,7 +63,7 @@ label{
 
 .btn1 {
 	color: #ffffff;
-	border: 1;
+	border: 7px;
 	text-shadow: 0px 1px 0px #333333;
 	background:blue;
 	width: auto;
@@ -86,8 +86,8 @@ label{
 
 .input[type=text], .input[type=email], .input[type=password] {
     padding: 2px;
-    border: xpx solid
-	font-size: 5px;
+    border: 1px solid;
+	font-size: 20px;
 
 ;
     border-radius: 4px;

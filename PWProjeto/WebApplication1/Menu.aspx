@@ -17,7 +17,7 @@
 				<!--<a href="javascript:void(0)" class="dropbtn">Clientes</a>-->
 				<div class="dropdown-content">
 					<a href="lista.aspx">Lista</a>
-					<a href="cadastro.aspx">Cadastro</a>
+					<a href="crud.aspx">Cadastro</a>
 				</div>
 			</li>
 			<li><a href="#">Sobre nós</a></li>

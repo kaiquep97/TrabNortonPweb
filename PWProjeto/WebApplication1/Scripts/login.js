@@ -1,5 +1,5 @@
 
 
 function redireciona(){
-    window.location.replace("mainpage.html");
+    window.location.replace("lista.php");
 }

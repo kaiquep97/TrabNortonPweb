@@ -15,7 +15,8 @@
 	</head>
 		<body id="b1" class="body">
 			<div class="page">
-				<div class="titulo"><h1>Login</h1></div>
+				<div class="titulo"><h1>Login</h1>
+				</div><br /><br />
 				<div>
 					<form id="frmLogin" runat="server">
 						<div>
@@ -26,8 +27,7 @@
 							<br />
 							<!--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>-->
 							<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenhaEmail" runat="server" ErrorMessage="Digite um E-mail no formato xx@xx.com" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-							<br />
-&nbsp;</div>
+							</div>
                         <br />
 						<div>
 							<label for="txtSenha">Senha:</label>&nbsp;
@@ -38,9 +38,13 @@
 						<br />
 						<br />
 						<div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="BtnEntrar" runat="server" CssClass="btn1" OnClick="BtnEntrar_Clicked" Text="Entrar" />
                             <br />
                             <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="BtnEsqueci" runat="server" CssClass="btn2" OnClick="BtnEsqueci_Click" Text="Esqueci minha senha" />
                             <br />
                             <br />

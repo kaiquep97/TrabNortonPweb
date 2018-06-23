@@ -61,7 +61,6 @@ namespace WebApplication1
                         var email = new Util.Email();
                         if (email.EnviaEmail("SENHA", $"Sua Senha é {user.senha}", em))
                             Label1.Text = "EMAIL ENVIADO COM SUCESSO!";
-
                     }
                 }
                 catch (Exception err)
