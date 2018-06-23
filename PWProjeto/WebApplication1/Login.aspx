@@ -17,7 +17,7 @@
 			<div class="page">
 				<div class="titulo"><h1>Login</h1></div>
 				<div>
-					<form id="frmLogin" method="post" action="mainpage.html">
+					<form id="frmLogin" method="post" action="lista.aspx">
 						<div>
 							<label for="InputEmail">E-mail:</label>
 							<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>
