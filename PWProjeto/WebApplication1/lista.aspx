@@ -21,7 +21,7 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <br />
-            <asp:Button ID="BtnNovo" runat="server" CssClass="btn" Text="Adicionar Novo" />
+            <asp:Button ID="BtnNovo" runat="server" CssClass="btn" Text="Adicionar Novo" OnClick="BtnNovo_Click"/>
             <asp:Button ID="BtnSair" runat="server" CssClass="btn" Text="Sair" OnClick="BtnSair_Click" />
             <br />
             <br />

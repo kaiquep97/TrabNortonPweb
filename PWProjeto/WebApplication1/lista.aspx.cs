@@ -33,5 +33,10 @@ namespace WebApplication1
             Session.Abandon();
             Response.Redirect("login.aspx");
         }
+
+        protected void BtnNovo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("crud.aspx");
+        }
     }
 }

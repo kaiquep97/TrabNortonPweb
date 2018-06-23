@@ -23,18 +23,21 @@
 							<label for="txtEmail">E-mail:</label>
 
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="input" OnTextChanged="txtEmail_TextChanged" Width="266px"></asp:TextBox>
+<<<<<<< HEAD
 &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ErrorMessage="Digite um E-mail" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
 							<br />
 							<!--<input id="InputEmail" type="email" placeholder="Digite seu endereço de e-mail." width="auto" required>-->
 							<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenhaEmail" runat="server" ErrorMessage="Digite um E-mail no formato xx@xx.com" ForeColor="Red" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
 							</div>
+=======
+
+						</div>
+>>>>>>> 6da98e9e9279054b7b3327cdee1fcd0d8a86ee04
                         <br />
 						<div>
 							<label for="txtSenha">Senha:</label>&nbsp;
                             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" CssClass="input" Width="272px"></asp:TextBox>
 						</div>
-&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidatorSenha" runat="server" ErrorMessage="Digite uma Senha!" ForeColor="Red" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
-						<asp:RegularExpressionValidator ID="RegularExpressionValidatorSenha" runat="server" ControlToValidate="txtCep" ErrorMessage="Digite 8 numeros!" ForeColor="Red" ValidationExpression="^\d{8}?"></asp:RegularExpressionValidator>
 						<br />
 						<br />
 						<div>
@@ -44,8 +47,12 @@
                             <asp:Button ID="BtnEntrar" runat="server" CssClass="btn1" OnClick="BtnEntrar_Clicked" Text="Entrar" />
                             <br />
                             <br />
+<<<<<<< HEAD
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="BtnEsqueci" runat="server" CssClass="btn2" OnClick="BtnEsqueci_Click" Text="Esqueci minha senha" />
+=======
+                            <asp:Button ID="BtnEsqueci" runat="server" OnClick="BtnEsqueci_Click" Text="Esqueci minha senha" />
+>>>>>>> 6da98e9e9279054b7b3327cdee1fcd0d8a86ee04
                             <br />
                             <br />
                             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
